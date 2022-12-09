@@ -1,0 +1,28 @@
+@mixin container ()
+{
+    border: 2px solid $foreground;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+    background-color: $background;
+}
+
+@mixin red-coat ()
+{
+    box-shadow: 0 0rem 1rem $primary;
+    outline: 1px solid $primary;
+    background-image: linear-gradient(
+        $primary -25%,
+        $background 75%
+        );
+}
+
+@mixin metal-coat ()
+{
+    background: linear-gradient(-90deg, $background, 
+        $reflection 0%,
+        $shine 1rem,
+        $background 4rem,
+        $reflection 100%
+        );
+}

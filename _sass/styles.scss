@@ -22,21 +22,18 @@ audio {
   height: 2rem;
 }
 
-/* Interaction blocks */
-#header, #footer, #widget {
-  outline: 1px solid $primary;
-  background-image: linear-gradient($primary -25%, $background 75%);
-  box-shadow: 0 0rem 1rem $primary;
-}
-
 /* Header */
 #header {
+  @include red-coat;
+
   margin: 1rem 0;
-  padding: 1rem;
+  padding: $container-gap;
   /* Navigation block */
   a {
     padding: 1rem;
 
+    font-family: $header-font;
+    font-size: 1.5rem;
     color: $foreground;
     text-decoration: none;
 
@@ -51,9 +48,10 @@ audio {
 }
 
 /* Content container */
-#container {
-  padding: 1rem;
-  border: 2px solid $foreground;
+#container {  
+  @include container;
+
+  box-shadow: 0 0rem 1rem $primary;
 }
 
 /* Reusable classes */

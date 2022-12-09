@@ -1,4 +1,20 @@
 ---
 ---
+// Fonts
+@font-face {
+    font-family: 'OldStandardTT';
+    src: url({{ "/assets/fonts/OldStandardTT-Regular.tff" | prepend: site.baseurl }});
+}
+@font-face {
+    font-family: 'OldStandardTT-Italic';
+    src: url({{ "/assets/fonts/OldStandardTT-Italic.ttf" | prepend: site.baseurl }});
+}
+@font-face {
+    font-family: 'OldStandardTT-Bold';
+    src: url({{ "/assets/fonts/OldStandardTT-Bold.ttf" | prepend: site.baseurl }});
+}
+
+// CSS
+@import "mixin";
 @import "variables";
 @import "styles";

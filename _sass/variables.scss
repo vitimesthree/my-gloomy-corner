@@ -1,8 +1,14 @@
+// Fonts
+$header-font: 'OldStandardTT-Bold';
+
 // Colours
 $foreground: #fff;
 $background: #000;
 
 $primary: #ff0020;
 
+$shine: rgba(255, 255, 255, 0.5);
+$reflection: rgba(255,255,255, 0.2);
+
 // Distances
-$container-gap: 24px;
+$container-gap: 1rem;
