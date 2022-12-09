@@ -1,4 +1,4 @@
-baseurl: my-gloomy-corner/
+baseurl: "/my-gloomy-corner"
 
 defaults:
   - scope:
