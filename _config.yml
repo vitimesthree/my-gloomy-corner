@@ -1,5 +1,4 @@
-baseurl: /my-gloomy-corner
-url: http://vitimesthree.github.io
+baseurl: my-gloomy-corner/
 
 defaults:
   - scope:
