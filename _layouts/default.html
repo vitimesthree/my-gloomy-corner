@@ -1,19 +1,4 @@
 ---
+layout: base
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href={{ "/assets/css/main.css" | prepend: site.baseurl }}>
-  </head>
-  <body>
-    <div id="header">
-      {% include navigation.html %}
-    </div>
-    <div id="container">
-      {{ content }}
-    </div>
-  </body>
-</html>
+{% include content.html %}

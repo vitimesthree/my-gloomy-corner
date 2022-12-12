@@ -18,7 +18,8 @@ a {
 }
 
 audio {
-  width: 100%;
+  $audio-padding: $widget-width - $container-gap;
+  width: $audio-padding - $container-gap ;
   height: 2rem;
 }
 
@@ -47,14 +48,43 @@ audio {
   }  
 }
 
-/* Content container */
-#container {  
-  @include container;
+/* Content containers */
+#containers {
+  display: flex;
+  gap: $container-gap;
+}
 
-  box-shadow: 0 0rem 1rem $primary;
+#content {  
+  @include containers;
+
+  flex: 1 1 auto;
+}
+
+#widget {
+  width: $widget-width;
+
+  div {
+    @include red-coat;
+    padding: $container-gap 0;
+
+    * {
+      margin: 0 $container-gap;
+    }
+  }
 }
 
 /* Reusable classes */
 .center {
   text-align: center;
+}
+
+.emoticon {
+  display: inline !important;
+}
+
+.large-text {
+  font-family: $header-font;
+  font-size: $font-size + 0.5rem;
+  font-weight: bolder;
+  filter: drop-shadow(0 0 0.2rem $background);
 }

@@ -1,14 +1,19 @@
 // Fonts
 $header-font: 'OldStandardTT-Bold';
 
+$font-size: 1rem;
+
 // Colours
 $foreground: #fff;
 $background: #000;
 
 $primary: #ff0020;
 
+$transparent: rgba(0, 0, 0, 0);
+
 $shine: rgba(255, 255, 255, 0.5);
 $reflection: rgba(255,255,255, 0.2);
 
 // Distances
 $container-gap: 1rem;
+$widget-width: 15rem;
