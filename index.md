@@ -1,7 +1,6 @@
 ---
 title: Home
-layout: widget
 ---
-# Welcome
+# YOU ARE ENTERING MY ZONE...
 
-This is MY WORLD!
+welcome to, my perfect website. im totes a good who loves to explore.

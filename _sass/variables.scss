@@ -15,5 +15,8 @@ $shine: rgba(255, 255, 255, 0.5);
 $reflection: rgba(255,255,255, 0.2);
 
 // Distances
+$site-width: 900px;
+$mobile-width: $site-width - 0.5px;
+
 $container-gap: 1rem;
 $widget-width: 15rem;

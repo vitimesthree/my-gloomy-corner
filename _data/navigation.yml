@@ -1,4 +1,6 @@
 - name: Home
   link: /
 - name: About
-  link: /pages/about.html
+  link: /about.html
+- name: Games
+  link: /games.html

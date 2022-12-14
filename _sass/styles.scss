@@ -1,7 +1,7 @@
 body {
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 100%;
-  max-width: 900px;
+  max-width: $site-width;
 
   color: $foreground;
   background-color: $background;
@@ -17,21 +17,41 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 audio {
   $audio-padding: $widget-width - $container-gap;
   width: $audio-padding - $container-gap ;
   height: 2rem;
 }
 
+/* Content containers */
+#containers {
+  display: flex;
+  justify-content: center;
+  gap: $container-gap;
+
+  @media (max-width: $mobile-width) {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
 /* Header */
 #header {
-  @include red-coat;
+  display: flex;
+  flex-flow: column nowrap;
 
-  margin: 1rem 0;
-  padding: $container-gap;
+  @media (max-width: $mobile-width) {
+    flex-flow: row wrap;
+  }
+
   /* Navigation block */
   a {
-    padding: 1rem;
+    margin: 0;
+    padding: 1rem 0.5rem;
 
     font-family: $header-font;
     font-size: 1.5rem;
@@ -45,19 +65,13 @@ audio {
 
   .selected {
     color: $primary;
-  }  
-}
-
-/* Content containers */
-#containers {
-  display: flex;
-  gap: $container-gap;
+  }
 }
 
 #content {  
   @include containers;
 
-  flex: 1 1 auto;
+  flex: auto;
 }
 
 #widget {
@@ -65,11 +79,7 @@ audio {
 
   div {
     @include red-coat;
-    padding: $container-gap 0;
-
-    * {
-      margin: 0 $container-gap;
-    }
+    padding: 0.1rem 1rem;
   }
 }
 
