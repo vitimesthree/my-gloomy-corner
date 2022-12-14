@@ -1,11 +1,7 @@
 <div id="game_list">
   {% for item in site.data.games %}
     <a href="{{ item.link | prepend:site.baseurl }}">
-      <image src="{{ item.image }}" alt="{{ item.name }}">
-        <p>
-          {{ item.name }}
-        </p>
-      </image>
+      <image src="{{ item.image }}" alt="{{ item.name }}"/>
     </a>
   {% endfor %}
 </div>

@@ -1,4 +1,4 @@
-<nav id="header">
+<nav id="navigation">
   {% for item in site.data.navigation %}
     <a href="{{ item.link | prepend:site.baseurl }}" {% if page.url == item.link %}class="selected"{% endif %}>
       {{ item.name }}

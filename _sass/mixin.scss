@@ -5,6 +5,10 @@
     padding: 1rem;
     
     background-color: $background;
+
+    @media (max-width: $mobile-width) {
+        border: none;
+    }
 }
 
 @mixin red-coat ()
