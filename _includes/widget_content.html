@@ -1,19 +1,19 @@
 <div id="widget">
   <div>
     <h1>
-      Cool Stuff <img class="smiley" src="assets/images/smileys/coolpeace.gif" />
+      Cool Stuff <img class="smiley" src={{ "/assets/images/smileys/coolpeace.gif" | prepend: site.baseurl }}/>
     </h1>
   </div>
   <div>
     <p class="center large-text">SWAMP COVER!</p>
     <audio controls>
-      <source src="assets/audio/believer.mp3" type="audio/mp3" />
+      <source src={{ "/assets/audio/believer.mp3" | prepend: site.baseurl }} type="audio/mp3" />
       <p>upgrade your browser bruh.</p>
     </audio>
   </div>
   <div>
     <p>
-      if you are reading this: you are GAY!! <img class="smiley" src="assets/images/smileys/devil.gif" />
+      if you are reading this: you are GAY!! <img class="smiley" src={{ "/assets/images/smileys/devil.gif"  | prepend: site.baseurl }} />
     </p>
   </div>
 </div>

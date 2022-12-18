@@ -1,6 +1,3 @@
-- name: Pong
-  link: /games/pong/game
-  image: http://placekitten.com/360/180
-- name: Test Game 2
-  link: /
-  image: http://placekitten.com/360/180
+- name: SHREK Concentration
+  link: /games/shrek
+  image: /assets/images/shrek.png
