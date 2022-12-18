@@ -1,5 +1,7 @@
 title: "my gloomy corner"
 description: "the bestest darkest website on the web"
+
+github: "https://vitimesthree.github.io"
 baseurl: "/my-gloomy-corner"
 
 defaults:
