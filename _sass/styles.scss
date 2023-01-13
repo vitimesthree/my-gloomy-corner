@@ -21,6 +21,30 @@ img {
   max-width: 100%;
 }
 
+button {
+  min-width: 3rem;
+  padding: 0.5rem 1rem;
+
+  border: 2px $primary solid;
+  border-radius: $font-size;
+
+  color: $foreground;
+  background-color: $background;
+
+  font-size: $font-size + 0.5rem;
+
+  &:hover {
+    cursor:pointer;
+
+    border-color: $foreground;
+  }
+
+  &:active {
+    scale: 90%;
+    border-width: 2px;
+  }
+}
+
 audio {
   $audio-padding: $widget-width - $container-gap;
   width: $audio-padding - $container-gap ;
@@ -40,6 +64,10 @@ audio {
     &:hover{
       color: inherit;
     }
+  }
+
+  &-message {
+    height: 4rem;
   }
 }
 
@@ -119,6 +147,15 @@ audio {
 
 .emoticon {
   display: inline !important;
+}
+
+.counter {
+  font-size: $font-size + 2rem !important;
+}
+
+.fire {
+  background-image: url(../images/fire.gif);
+  background-repeat: repeat-x;
 }
 
 .small-text {

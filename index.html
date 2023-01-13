@@ -3,13 +3,18 @@ title: home
 ---
 <h1>waddup. welcome to my site.</h1>
 
+<img src={{ "/assets/images/kot_camp.gif" | prepend: site.baseurl }} />
+
 <p>this is the best web site in the world wide web, for reals.</p>
 
 <p>prepare, to, have, your, mind,, blown, with my,:</p>
 
 <ul class="large-text">
   <li>
-    GAMES!
+    <!-- Games -->
+    <a href="{{ site.data.navigation[2].link | prepend: site.baseurl }}">
+      {{ site.data.navigation[2].name | upcase }}!
+    </a>
   </li>
   <li>
     MUSICS!

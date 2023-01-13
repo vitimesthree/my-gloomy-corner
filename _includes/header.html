@@ -3,8 +3,28 @@
     <a href="{{ "/" | prepend:site.baseurl }}">{{ site.title }}</a>
   </h1>
 
-  <img
-    class="hidden m1"
-    src={{ "/assets/images/newyear.gif" | prepend: site.baseurl }}
-    alt="Happy New Year!" />
+  <!-- Monthly header images!-->
+  <!-- Works using Javascript which checks for a class named m accompanied with a number -->
+  <div id="header-message">
+    <img
+      class="hidden m1"
+      src={{ "/assets/images/newyear.gif" | prepend: site.baseurl }}
+      alt="Happy New Year!" />
+    <img
+      class="hidden m2"
+      src={{ "/assets/images/valentinesday.gif" | prepend: site.baseurl }}
+      alt="Happy February Day!" />
+    <p class="hidden m3">
+      you are beautiful<img class="emoticon" src={{ "/assets/images/smileys/heartbounce.gif" | prepend: site.baseurl }} />
+    </p>
+    <div class="hidden m4"></div>
+    <div class="hidden m5"></div>
+    <div class="hidden m6"></div>
+    <div class="hidden m7"></div>
+    <div class="hidden m8"></div>
+    <div class="hidden m9"></div>
+    <div class="hidden m10"></div>
+    <div class="hidden m11"></div>
+    <div class="hidden m12"></div>
+  </div>
 </header>

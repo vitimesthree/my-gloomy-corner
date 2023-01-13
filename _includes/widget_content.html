@@ -1,9 +1,11 @@
 <div id="widget">
   <div>
     <h1>
-      Cool Stuff <img class="smiley" src={{ "/assets/images/smileys/coolpeace.gif" | prepend: site.baseurl }}/>
+      Hot Stuff <img class="smiley" src={{ "/assets/images/smileys/coolpeace.gif" | prepend: site.baseurl }} />
     </h1>
   </div>
+
+  <!-- SWAMP COVER -->
   <div>
     <p class="center large-text">SWAMP COVER!</p>
     <audio controls>
@@ -11,9 +13,28 @@
       <p>upgrade your browser bruh.</p>
     </audio>
   </div>
+
+  <!-- gay -->
   <div>
     <p>
-      if you are reading this: you are GAY!! <img class="smiley" src={{ "/assets/images/smileys/devil.gif"  | prepend: site.baseurl }} />
+      if you are reading this: you are GAY!! <img class="smiley" src={{ "/assets/images/smileys/devil.gif" | prepend: site.baseurl }} />
+    </p>
+  </div>
+  
+  <!-- Counting machine -->
+  <div id="">
+    <p class="center large-text">Counting Machine</p>
+    <p class="center">
+      <button id="machine-plus">+</button>
+      <button id="machine-minus">−</button>
+      <button id="machine-double">2⨉</button>
+    <p>
+      <span
+      id="machine-count"
+      class="center large-text counter">
+        0
+      </span>
+      <img id="negative-number" class="hidden smiley" src={{ "/assets/images/smileys/crazy.gif" | prepend: site.baseurl }} />
     </p>
   </div>
 </div>

@@ -1,5 +1,5 @@
 // Ensure page loads first
-$(function(){$(window).bind('load', function(){
+$(document).ready(function() {
 
 // Show a different image depending on the month.
 function checkMonth() {
@@ -11,4 +11,4 @@ function checkMonth() {
 
 checkMonth();
 
-});});
+});

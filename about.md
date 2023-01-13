@@ -23,4 +23,7 @@ IT'S MINE!!!
 ## can i submit a game?
 noooo only me and san-san can make games.
 
+## where di u get the emojis?
+a mystery
+
 ![](assets/images/smileys/blablabla.gif)
