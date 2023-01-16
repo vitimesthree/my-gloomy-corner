@@ -1,6 +1,10 @@
 <nav id="navigation">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link | prepend:site.baseurl }}" {% if page.url contains item.name or page.url == item.link %}class="selected"{% endif %}>
+    {% assign url = item.link %}
+    {% if item.link != "/" %}
+      {% assign url = url | append: ".html" %}
+    {% endif %}
+    <a href="{{ item.link | prepend:site.baseurl }}" {% if page.url == url %}class="selected"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}

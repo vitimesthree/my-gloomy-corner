@@ -3,6 +3,8 @@ description: "the bestest darkest website on the web"
 
 github: "https://vitimesthree.github.io"
 baseurl: "/my-gloomy-corner"
+imageurl: "/my-gloomy-corner/assets/images/"
+audiourl: "/my-gloomy-corner/assets/audio/"
 
 defaults:
   - scope:

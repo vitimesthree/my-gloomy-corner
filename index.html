@@ -3,7 +3,7 @@ title: home
 ---
 <h1>waddup. welcome to my site.</h1>
 
-<img src={{ "/assets/images/kot_camp.gif" | prepend: site.baseurl }} />
+<img src={{ "kot_camp.gif" | prepend: site.imageurl }} />
 
 <p>this is the best web site in the world wide web, for reals.</p>
 
@@ -23,7 +23,9 @@ title: home
     VIDEOS!
   </li>
   <li>
-    POLYGRAPHS!
+    <a href="{{ site.data.navigation[3].link | prepend: site.baseurl }}">
+      {{ site.data.navigation[3].name | upcase }}!
+    </a>
   </li>
   <li>
     etc.

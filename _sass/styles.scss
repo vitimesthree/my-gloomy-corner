@@ -67,6 +67,9 @@ audio {
   }
 
   &-message {
+    display: flex;
+    align-items: center;
+
     height: 4rem;
   }
 }
@@ -167,6 +170,45 @@ audio {
   font-size: $font-size + 0.5rem;
   font-weight: bolder;
   filter: drop-shadow(0 0 0.2rem $primary);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &-picture {
+    align-self: center;
+
+    margin: $container-gap;
+
+    border: 0.4rem solid $foreground;
+    background-color: $foreground;
+
+    text-align: center;
+    color: $background;
+    font-family: $gallery-font;
+    font-size: $font-size + 0.5rem;
+    font-weight: bold;
+
+    a {
+      img {
+        transition-duration: 6s;
+      }
+
+      &:hover {
+        img {
+          transition-duration: 24s;
+          scale: 0.9;
+          filter: invert(50%);
+        }
+      }
+    }
+
+    img {
+      max-width: 320px;
+    }
+  }
 }
 
 .game-banner {
