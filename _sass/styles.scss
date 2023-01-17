@@ -96,6 +96,8 @@ audio {
   @media (max-width: $mobile-width) {
     flex-flow: row wrap;
     justify-content: space-evenly;
+    /* Always on top */
+    z-index: 999;
 
     border-bottom: 1px solid $shine;
 
