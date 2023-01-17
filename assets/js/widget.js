@@ -3,6 +3,11 @@ $(document).ready(function() {
 
 var count = 0;
 
+// Random number generator
+function randomRange(min, max) {
+    return Math.round(Math.random()*(max-min) + min);
+}
+
 // Counting Machine MECHANICS!!!
 $(document).ready(function() {
     var label = $("#machine-count");
@@ -37,6 +42,16 @@ $(document).ready(function() {
         count *= 2;
         process(count);
     });
+
+    // Fake leaderboard
+    var top = randomRange(1162, 1229910);
+    function countUp(){
+        top += 1
+        $("#top-count").html(top);
+
+        setTimeout(countUp, randomRange(49, 526));
+    }
+    countUp();
 });
 
 });

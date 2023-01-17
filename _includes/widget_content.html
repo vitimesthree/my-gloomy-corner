@@ -1,4 +1,4 @@
-<div id="widget">
+<div id="widget" class="sticky sticky-desktop">
   <div>
     <h1>
       Hot Stuff <img class="smiley" src={{ "smileys/coolpeace.gif" | prepend: site.imageurl }} />
@@ -22,7 +22,7 @@
   </div>
   
   <!-- Counting machine -->
-  <div id="">
+  <div>
     <p class="center large-text">Counting Machine</p>
     <p class="center">
       <button id="machine-plus">+</button>
@@ -36,5 +36,18 @@
       </span>
       <img id="negative-number" class="hidden smiley" src={{ "smileys/crazy.gif" | prepend: site.imageurl }} />
     </p>
+    <p>
+      <p>MY SCORE:</p>
+      <span
+      id="top-count"
+      class="center large-text counter">
+        0
+      </span>
+    </p>
+  </div>
+
+  <!-- Meow! -->
+  <div>
+    <img src="{{ "meow.gif" | prepend: site.imageurl }}" alt="MEOW" />
   </div>
 </div>

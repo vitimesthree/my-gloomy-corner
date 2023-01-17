@@ -48,7 +48,7 @@ button {
 audio {
   $audio-padding: $widget-width - $container-gap;
   width: $audio-padding - $container-gap ;
-  height: 2rem;
+  height: 1.8rem;
 }
 
 /* Header */
@@ -91,8 +91,16 @@ audio {
   display: flex;
   flex-flow: column nowrap;
 
+  background-color: $background;
+
   @media (max-width: $mobile-width) {
     flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    border-bottom: 1px solid $shine;
+
+    top: 0;
+    width: 100%;
   }
 
   /* Navigation block */
@@ -130,6 +138,11 @@ audio {
   }
 }
 
+/* Override counter class size */
+#top-count {
+  font-size: $font-size + 1rem !important;
+}
+
 /* Footer */
 #footer {
   padding: $container-gap;
@@ -146,6 +159,21 @@ audio {
 
 .hidden {
   display: none;
+}
+
+.sticky {
+  align-self: flex-start;
+  
+  position: sticky;
+  top: 1rem;
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+
+    &-desktop {
+        position: static;
+    }
+  }
 }
 
 .emoticon {
