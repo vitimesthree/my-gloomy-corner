@@ -131,6 +131,7 @@ audio {
   flex: auto;
 }
 
+/* Widget */
 #widget {
   width: $widget-width;
 
@@ -150,6 +151,22 @@ audio {
   padding: $container-gap;
 }
 
+/* Page-specific elements */
+#san-san {
+  z-index: 99;
+
+  margin-top: -2rem;
+
+  position: relative;
+  /* Bottom distance will be calculated with jQuery in field.js */
+  left: 30%;
+  right: 70%;
+
+  width: 6%;
+
+  filter: grayscale(14%);
+}
+
 /* Reusable classes */
 .center {
   text-align: center;
@@ -157,6 +174,10 @@ audio {
 
 .right {
   text-align: right;
+}
+
+.wide {
+  width: 100%;
 }
 
 .hidden {
@@ -191,6 +212,15 @@ audio {
   background-repeat: repeat-x;
 }
 
+.fadeout {
+  @keyframes fadeout {
+    0% { -webkit-filter: blur(0px);}
+    100% { -webkit-filter: blur(100rem);}
+  }
+
+  animation: fadeout 3.2s forwards;
+}
+
 .small-text {
   font-size: $font-size - 0.2rem;
 }
@@ -202,6 +232,7 @@ audio {
   filter: drop-shadow(0 0 0.2rem $primary);
 }
 
+/* Gallery block */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +272,7 @@ audio {
   }
 }
 
+/* Game selection */
 .game-banner {
   border-radius: 1rem;
   &:hover {

@@ -5,6 +5,7 @@ github: "https://vitimesthree.github.io"
 baseurl: "/my-gloomy-corner"
 imageurl: "/my-gloomy-corner/assets/images/"
 audiourl: "/my-gloomy-corner/assets/audio/"
+videourl: "/my-gloomy-corner/assets/videos/"
 
 defaults:
   - scope:
