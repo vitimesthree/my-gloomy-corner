@@ -22,7 +22,9 @@ $(window).on("resize", function(){
 });
 
 /* Dissapear when hovered over */
+var sound = new Audio('assets/audio/gone.mp3')
 $("#san-san").hover(function(){
+    sound.play();
     $(this).addClass("fadeout");
 });
 

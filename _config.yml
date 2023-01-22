@@ -12,3 +12,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+kramdown:
+  auto_ids: "false"
