@@ -14,10 +14,6 @@ defaults:
     values:
       layout: "default"
       image: "banner.png"
-  - scope:
-      path: "games/"
-    values:
-      layout: "empty"
 
 kramdown:
   auto_ids: "false"
