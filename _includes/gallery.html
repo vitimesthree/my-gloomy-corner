@@ -2,8 +2,8 @@
   {% for image in site.data.gallery %}
     <div class="gallery-picture">
       {% assign link = image.name | prepend: "polygraphs/" | prepend: site.imageurl %}
-      <a href="{{ link }}" target="_blank">
-        <img src="{{ link }}" alt="{{ image.basename }}" />
+      <a href={{ link }} target="_blank">
+        <img src={{ link }} alt={{ image.name }} />
       </a>
       <p>{{ image.caption }}</p>
     </div>

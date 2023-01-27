@@ -7,11 +7,21 @@ imageurl: "/my-gloomy-corner/assets/images/"
 audiourl: "/my-gloomy-corner/assets/audio/"
 videourl: "/my-gloomy-corner/assets/videos/"
 
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+      image: "banner.png"
+  - scope:
+      path: "games/"
+    values:
+      layout: "empty"
 
 kramdown:
   auto_ids: "false"
+
+
+gems:
+- jekyll-auto-image
