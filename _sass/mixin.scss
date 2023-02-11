@@ -1,10 +1,10 @@
 @mixin containers ()
 {
     border: 1px solid $shine;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 2rem;
     padding: 1rem;
     
-    background-color: $background;
+    background-color: $container-background;
 
     @media (max-width: $mobile-width) {
         border: none;
@@ -15,6 +15,7 @@
 {
     box-shadow: 0 0rem 1rem $primary;
     outline: 1px solid $primary;
+
     background: linear-gradient(
         $primary -1rem,
         $background 100%
