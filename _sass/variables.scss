@@ -2,19 +2,18 @@
 $header-font: 'OldStandardTT-Bold';
 $gallery-font: 'OldStandardTT-Italic';
 
-$font-size: 1rem;
+$font-size: 0.9rem;
 
 // Colours
 $foreground: #fff;
 $background: #000;
-$container-background: #121212;
 
 $primary: #ff0020;
 
 $transparent: rgba(0, 0, 0, 0);
 
-$shine: rgba(255, 255, 255, 0.5);
-$reflection: rgba(255,255,255, 0.2);
+$shine: rgba(210, 240, 255, 0.4);
+$reflection: rgba(210, 240, 255, 0.2);
 
 // Distances
 $site-width: 900px;
@@ -22,3 +21,7 @@ $mobile-width: $site-width - 0.5px;
 
 $container-gap: 1rem;
 $widget-width: 15rem;
+
+// Shapes
+$container-shape: 0.5rem 2rem;
+$container-shape-flipped: 2rem 0.5rem;

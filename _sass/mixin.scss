@@ -1,10 +1,8 @@
 @mixin containers ()
 {
     border: 1px solid $shine;
-    border-radius: 0.5rem 2rem;
+    border-radius: $container-shape;
     padding: 1rem;
-    
-    background-color: $container-background;
 
     @media (max-width: $mobile-width) {
         border: none;
@@ -16,20 +14,27 @@
     box-shadow: 0 0rem 1rem $primary;
     outline: 1px solid $primary;
 
-    background: linear-gradient(
-        $primary -1rem,
-        $background 100%
+    background:
+        $background
+        linear-gradient(
+            $primary -2rem,
+            $transparent 5rem
         );
 }
 
 @mixin metal-coat ()
 {
     background:
-        linear-gradient(90deg, $background, 
-        $reflection 0%,
-        $shine 1rem,
-        $transparent 2rem,
-        $reflection 100%
-        ),
-        $background;
+        $background
+        linear-gradient(-90deg, $background, 
+            $reflection 0%,
+            $shine 0.25rem,
+            $transparent 1rem,
+            $background 90%,
+            $reflection 100%
+        );
+
+    @media (max-width: $mobile-width) {
+        background: $background;
+    }
 }

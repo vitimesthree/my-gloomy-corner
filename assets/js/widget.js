@@ -1,15 +1,14 @@
 // Ensure page loads first
 $(document).ready(function() {
 
-var count = 0;
-
 // Random number generator
 function randomRange(min, max) {
     return Math.round(Math.random()*(max-min) + min);
 }
 
 // Counting Machine MECHANICS!!!
-$(document).ready(function() {
+function countingMachine() {
+    var count = 0;
     var label = $("#machine-count");
 
     // Process a button being clicked
@@ -52,6 +51,22 @@ $(document).ready(function() {
         setTimeout(countUp, randomRange(49, 526));
     }
     countUp();
-});
+};
+countingMachine();
+
+// The Cat API
+function generateCat($query) {
+    $.ajax({
+        type: 'GET',
+        url: $query,
+        success: function(data) {
+            $('#cat').append("<img src='" + data[0].url + "' alt='random cat' class='rounded'> not gotten B-(</img>");
+        },
+        error: function(err) {
+          console.log('error:' + err)
+        }
+    });
+}
+generateCat('https://api.thecatapi.com/v1/images/search?limit=1&size=thumb&mime_types=gif');
 
 });
