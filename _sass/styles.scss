@@ -259,8 +259,8 @@ audio {
 
 .fadeout {
   @keyframes fadeout {
-    0% { -webkit-filter: blur(0px);}
-    100% { -webkit-filter: blur(100rem);}
+    0% { filter: blur(0px);}
+    100% { filter: blur(100rem);}
   }
 
   animation: fadeout 3.2s forwards;
