@@ -5,6 +5,7 @@ body {
 
   color: $foreground;
   background: linear-gradient(180deg, $background 0, $transparent 12rem, $background 64rem), url('../images/trees.jpg') no-repeat;
+  background-color: $background;
   background-size: cover;
   background-attachment: fixed;
   
