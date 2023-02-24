@@ -63,8 +63,18 @@ audio {
 
 /* Header */
 .logo {
-  font-family: $header-font;
-  font-size: $font-size + 1rem;
+  line-height: 0;
+
+  font-family: $logo-font;
+  font-size: $font-size + 2rem;
+  letter-spacing: 0.5rem;
+
+  a {
+    color: $primary;
+    &:hover {
+      color: $primary !important;
+    }
+  }
 }
 
 #header {

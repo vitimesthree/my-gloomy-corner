@@ -2,6 +2,10 @@
 ---
 // Fonts
 @font-face {
+    font-family: 'Needleteeth';
+    src: url({{ '/assets/fonts/Needleteeth-Spooky.ttf' | prepend: site.baseurl }});
+}
+@font-face {
     font-family: 'OldStandardTT';
     src: url({{ "/assets/fonts/OldStandardTT-Regular.tff" | prepend: site.baseurl }});
 }
