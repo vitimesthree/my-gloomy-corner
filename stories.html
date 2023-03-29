@@ -1,0 +1,19 @@
+---
+title: scaries FOR THE DARK
+---
+<div class="center">
+  <h1>DO NOT BE AFRAID</h1>
+  <p>these stories are mere <b>FICTION</b> that became from my scarred mind ...</p>
+  <p><b>CLICK AWAY!</b> if you dare...</p>
+</div>
+
+<ul>
+  {% for story in site.stories %}
+    <li>
+      <a href="{{ story.url | prepend:site.baseurl | remove:'.html' }}">
+        {{ story.title }}<br/>
+        <img src="{{ story.image | prepend:site.imageurl }}" alt="{{ story.image }}" width="auto" height="144">
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -34,9 +34,18 @@ defaults:
     values:
       layout: "default"
       image: "banner.png"
+  - scope:
+      path: ""
+      type: "stories"
+    values:
+      layout: "wide"
 
 kramdown:
   auto_ids: "false"
+
+collections:
+  stories:
+      output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
